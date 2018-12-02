@@ -1,1 +1,330 @@
 <!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>性格分類アプリ</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">性格分類アプリ</div>
+    </div>
+    <div class="main">
+      <div class="copy-container">
+        <h1><span>6</span>問であなたの性格を分類します</h1>
+      </div>
+
+      <div class="contents">
+        <h3 class="section-title">あまり悩まずに、当てはまる方をクリックしてください</h3>
+        <div class="form">
+      </div>
+      <div id="check" class="clearfix">
+        <!-- Q1 -->
+        <dl class="q" id="q1a">
+          <dt><span>質問1</span>初めて会う人とすぐに知り合いになれる</dt>
+          
+        </dl>
+        <!-- Q2 -->
+        <dl class="q" id="q2a">
+          <dt><span>質問2</span>必要なら誰とでも会話できる</dt>
+          
+        </dl>
+        <dl class="q" id="q2b">
+          <dt><span>質問2</span>特定の人や特定の話題があれば会話できる</dt>
+          
+        </dl>
+        <!-- Q3 -->
+        <dl class="q" id="q3a">
+          <dt><span>質問3</span>いろいろな人と広く付き合う性格だ</dt>
+          
+        </dl>
+        <dl class="q" id="q3b">
+          <dt><span>質問3</span>少数の友人と深く交わる性格だ</dt>
+          
+        </dl>
+        <!-- Q4 -->
+        <dl class="q" id="q4a">
+          <dt><span>質問4</span>すすんで新しいことをやる性格だ</dt>
+          
+        </dl>
+        <dl class="q" id="q4b">
+          <dt><span>質問4</span>新しいことをするのは気が向かない性格だ</dt>
+          
+        </dl>
+        <!-- Q5 -->
+        <dl class="q" id="q5a">
+          <dt><span>質問5</span>自分の感情は隠さず表す方だ</dt>
+          
+        </dl>
+        <dl class="q" id="q5b">
+          <dt><span>質問5</span>自分の感情は心の中にしまっておく方だ</dt>
+          
+        </dl>
+        <!-- Q6 -->
+        <dl class="q" id="q6a">
+          <dt><span>質問6</span>周りの人は自分のことを理解していると思う</dt>
+          
+        </dl>
+        <dl class="q" id="q6b">
+          <dt><span>質問6</span>周りの人は自分が打ち明けた以上のことは知らないと思う</dt>
+          
+        </dl>
+        <!-- 解決した？ -->
+        <dl class="q" id="result">
+          <dt><span>結果</span>結果を表示します、少々お待ちを...</dt>
+
+        </dl>
+        <!-- 残念 -->
+        <dl class="q" id="result1">
+          <dt><span>スーパー内向的</span>自分で考え、興味のあるものをとことん深掘りする人！？</dt>
+          <dt>MBTIで使われる「E（外向）」、「I（内向）」は、関心の向きや、心を満足させ新たな活力を得る方向性を指します。
+            一般的な意味（外向は活発な人で内向は引っ込み思案の人）とは異なるので注意しましょう。
+            外向的な人は、自分から人や物事に積極的に関わることで刺激を得、それによって心を満足させる傾向があります。
+            一方、内向的な人は、刺激を受け取ること自体よりも、それをもとに考えまたは内省することで心を満足させる傾向があります。
+            </dt>
+
+        </dl>
+        <!-- 直った -->
+        <dl class="q" id="result2">
+          <dt><span>少し内向的</span>人と関わるよりも、自分の興味のあることが大事！？</dt>
+          <dt>MBTIで使われる「E（外向）」、「I（内向）」は、関心の向きや、心を満足させ新たな活力を得る方向性を指します。
+              一般的な意味（外向は活発な人で内向は引っ込み思案の人）とは異なるので注意しましょう。
+              外向的な人は、自分から人や物事に積極的に関わることで刺激を得、それによって心を満足させる傾向があります。
+              一方、内向的な人は、刺激を受け取ること自体よりも、それをもとに考えまたは内省することで心を満足させる傾向があります。
+              </dt>
+
+        </dl>
+        <dl class="q" id="result3">
+          <dt><span>少し外交的</span>人と関わるのが好きだけど、おっくうに感じることも！？</dt>
+          <dt>MBTIで使われる「E（外向）」、「I（内向）」は、関心の向きや、心を満足させ新たな活力を得る方向性を指します。
+              一般的な意味（外向は活発な人で内向は引っ込み思案の人）とは異なるので注意しましょう。
+              外向的な人は、自分から人や物事に積極的に関わることで刺激を得、それによって心を満足させる傾向があります。
+              一方、内向的な人は、刺激を受け取ること自体よりも、それをもとに考えまたは内省することで心を満足させる傾向があります。
+              </dt>
+
+        </dl>
+        <dl class="q" id="result4">
+          <dt><span>スーパー外交的</span>多興味で、人と関わることがとにかく好きな人！？</dt>
+          <dt>MBTIで使われる「E（外向）」、「I（内向）」は、関心の向きや、心を満足させ新たな活力を得る方向性を指します。
+              一般的な意味（外向は活発な人で内向は引っ込み思案の人）とは異なるので注意しましょう。
+              外向的な人は、自分から人や物事に積極的に関わることで刺激を得、それによって心を満足させる傾向があります。
+              一方、内向的な人は、刺激を受け取ること自体よりも、それをもとに考えまたは内省することで心を満足させる傾向があります。
+            </dt>
+
+        </dl>
+        <dl class="q" id="return">
+          <dt><span>ありがとう</span>結果を見てね</dt>
+
+        </dl>
+        <ul id=yesno>
+          <li id="yes">はい</li>
+          <li id="no">いいえ</li>
+        </ul>
+       </div>
+      </div>
+    </div>
+    <!-- フッター -->
+    <div class="footer">
+      <div class="footer-logo">性格分類アプリ</div>
+      <div class="copylight">
+        <ul>以下、参考にしてください。
+         <li>引用元：MBTI日本版標準化の試み, 加茂ら</li>
+         <li><a href= "http://ci.nii.ac.jp/naid/110001878732">http://ci.nii.ac.jp/naid/110001878732</a></li>
+         <li><a href="http://ci.nii.ac.jp/naid/110008124605">http://ci.nii.ac.jp/naid/110008124605</a></li>
+        </ul>
+      </div>
+
+
+  <style>
+  .header {
+    background-color: hsl(155, 83%, 65%);
+    color: #fff;
+    height: 90px;
+  }
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  .main {
+    padding: 100px 80px;
+  }
+  .copy-container h1 {
+    font-size: 80px;
+  }
+  .copy-container span {
+    color: #66c6f3;
+  }
+  .contents {
+    height: 500px;
+    margin-top: 100px;
+  }
+  .section-title {
+    border-bottom: 3px solid #808a8f;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  .choose {
+    font-size: 40px;
+  }
+#check {
+  margin: 50px auto 0;
+  width: 700px;
+  height: 450px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll; 
+}
+#check ul {
+  padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 30px;
+}
+#check ul li {
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #888;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+#check ul li:hover {
+  background: #79d0f8;
+}
+.q {
+  margin-left: 650px;
+  padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50px;
+}
+.q:first-child {
+  margin-left: 0;
+}
+.q dt {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.q dt span {
+  padding: 3px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: block;
+  border: 2px #333 solid;
+}
+.footer {
+  font-size: 28px;
+  float: left;
+  background-color: #2f5167;
+  height: 100%;
+  width: 100%;
+}
+.footer-logo {
+  font-size: 28px;
+  color: white;
+}
+.copylight {
+  font-size: 14px;
+  color: rgb(111, 188, 233);
+  float: right;
+  padding-right: 20px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+var num = 1;  //質問の順番
+var qua = 6;  //質問数
+var branch = 'a';  //質問の分岐の種類
+var speed = 300;  //スライドの速度
+var nextQ = 'q' + num + branch;  //表示させるdiv（ID）の指定
+var allclear = false;  //trueなら最後の質問へ
+var score = 0
+//質問のカウントアップ
+function nq(){
+num ++;
+nextQ = 'q' + num + branch;
+}
+
+//次の画面へ移動
+function slide(){
+$('#'+nextQ).animate({ marginLeft: -650}, speed);
+nq();
+$('#'+nextQ).animate({ marginLeft: 0}, speed);
+}
+
+//解決しましたか？画面の表示
+function result(){
+$('#result dt span').text('質問'+num);
+allclear = true;
+$('#result').animate({ marginLeft: 0}, speed);
+setTimeout(function(){
+  if(score <=6){
+    saigo('result4');
+  }else if (score <= 8) {
+    saigo('result3');
+  }else if (score <= 10) {
+    saigo('result2');
+  }else{
+    saigo('result1');
+  }
+},2000);
+}
+
+//最後の画面
+function saigo(n){
+$('#check ul').animate({ opacity: 0}, speed);
+$('#result').animate({ marginLeft: -650}, speed);
+$('#'+n).animate({ marginLeft: 0}, speed);
+}
+
+//『はい』を選択した際の動き
+$("#yes").click(function(){
+if(allclear == false) {
+  score += 1
+  if(num < qua) {
+    branch = 'a'
+    slide();
+  } else {
+    $('#'+nextQ).animate({ marginLeft: -650}, speed);
+    $('#yesno').animate({ marginLeft: -650}, speed);
+    nq();
+    result();
+  }
+}
+});
+
+//『いいえ』を選択した際の動き
+$("#no").click(function(){
+if(allclear == false) {
+  score += 2
+  if(num < qua) {
+    branch = 'b';
+    slide();
+  } else {
+    $('#'+nextQ).animate({ marginLeft: -650}, speed);
+    $('#yesno').animate({ marginLeft: -650}, speed);
+    nq();
+    result();
+  }
+} else {
+  saigo('return');
+}
+});
+
+</script>
